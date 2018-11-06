@@ -1,0 +1,534 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300&subset=latin,latin-ext);
+body {
+	font-family: 'Ubuntu', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+	color: #000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}*/
+
+.bold {
+	font-weight: 700;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.color-ik {
+	color: #61913c;
+}
+
+header {
+	background-color: #fff;
+	background-image: url('../img/background.png');
+	background-size: cover;
+	height: 340px;
+}
+
+header .container {
+	position: relative;
+	height: 340px;
+}
+
+header .banner-top {
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 33px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+header .banner-top .banner-benefits {
+	margin-left: 10%;
+}
+
+header .banner-bottom .banner-text {
+	color: #fff;
+	font-size: 3em;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+header .banner-bottom .banner-person {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.color-secondary {
+	color: #2e3237;
+}
+
+section.steps .steps-container {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+section.steps .dots-1 {
+	position: absolute;
+	top: 124px;
+	left: 236px;
+}
+
+section.steps .dots-2 {
+	position: absolute;
+	top: 254px;
+	left: 236px;
+}
+
+section.steps .text-step {
+	line-height: 1.5em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+section.steps .step2 .text-step {
+	text-align: right;
+}
+
+section.steps .new-line {
+	display: block;
+}
+
+section.steps .text-middle.step1 {
+	height: 144px;
+}
+
+section.steps .text-middle.step2 {
+	height: 126px;
+}
+
+section.steps .text-middle.step3 {
+	height: 147px;
+}
+
+section.steps .text-middle {
+	display: table;
+}
+
+section form {
+	position: relative;
+	max-width: 350px;
+	background-color: #72a340;
+	padding: 30px;
+	/*margin: 0 auto;*/
+	margin-top: 20px;
+	margin-left: 55px;
+	-webkit-box-shadow: 0px 14px 25px -6px rgba(0,0,0,0.64);
+	-moz-box-shadow: 0px 14px 25px -6px rgba(0,0,0,0.64);
+	box-shadow: 0px 14px 25px -6px rgba(0,0,0,0.64);
+	z-index: 999;
+}
+
+section form .form-header {
+	color: #fff;
+	font-size: 1.4em;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+section form .form-inputs .inputs input {
+	width: 100%;
+	display: block;	
+	margin-bottom: 10px;
+	padding: 8px;
+	font-weight: 300;
+	background-color: #618b36;
+	border: solid 0px #618b36;
+	color: #fff;
+}
+
+section form .submit-form-button {
+	background-color: #e05d39;
+	padding: 8px;
+	width: 80%;
+	border: none;
+	box-shadow: none;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1em;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+	position: relative;
+}
+
+section form .submit-form-button:after {
+	content: '';
+	margin-left: 10px;
+	width: 5px;
+	height: 7px;
+	background-image: url(../img/form-arrow.png);
+	position: absolute;
+	top: 15px;
+}
+
+section form .checkboxes div {
+	margin-top: 10px;
+}
+
+section form .checkboxes [type="checkbox"]:not(:checked),
+section form .checkboxes [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+section form .checkboxes [type="checkbox"]:not(:checked) + label,
+section form .checkboxes [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+  /*width: calc(100%-25px);*/
+  display: inline-block;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 400;
+}
+
+
+section form .checkboxes [type="checkbox"]:not(:checked) + label:before,
+section form .checkboxes [type="checkbox"]:checked + label:before {
+  content: '✔';
+  color: #72a340;
+  position: absolute;
+  left:0; 
+  vertical-align: middle;
+  width: 23px; 
+  height: 23px;
+  border: 1px solid #fff;
+}
+
+section form .checkboxes [type="checkbox"]:not(:checked) + label:after,
+section form .checkboxes [type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 3px; 
+  left: 4px;
+  font-size: 1.4em;
+  line-height: 0.8;
+  color: #fff;
+  transition: all .2s;
+}
+
+section form .checkboxes [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+section form .checkboxes [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---------- section opinions --------------------*/
+
+section.opinions {
+	background-color: #ececec;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #353c44;
+}
+
+section.opinions .opinions-header {
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+section.opinions .opinions-buttons {
+	float: right;
+	font-weight: 500;
+}
+
+section.opinions .opinions-buttons a.left {
+	padding-right: 10px;
+}
+
+section.opinions .opinions-buttons a.right {
+	padding-left: 10px;
+}
+
+section.opinions .carousel-inner .item {
+	background-image: url('../img/quote.png');
+	background-repeat: no-repeat;
+	min-height: 121px;
+	text-align: justify;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-right: 20px;
+}
+
+section.opinions .carousel-inner .item > span {
+
+}
+
+/* ---------- section rates --------------------*/
+
+section.rate-table {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+table.table th {
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+table.table th:not(:first-child), table.table td:not(:first-child) {
+	text-align: center;
+}
+
+table.table tr {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+table.table tr:nth-child(1) td:first-child:before {
+	content: url('../img/flag-eur.jpg');
+}
+
+table.table tr:nth-child(2) td:first-child:before {
+	content: url('../img/flag-usd.jpg');
+}
+
+table.table tr:nth-child(3) td:first-child:before {
+	content: url('../img/flag-chf.jpg');
+}
+
+table.table tr:nth-child(4) td:first-child:before {
+	content: url('../img/flag-gpb.jpg');
+}
+
+table.table tr td:first-child:before {
+	line-height: 1em;
+	vertical-align: middle;
+	width: 25px; 
+	height: 16px;
+	padding-right: 5px;
+}
+
+
+.bottom-shape {
+	margin: 0 auto;
+}
+
+footer .container {
+	position: relative;
+}
+
+footer .bottom-shape {
+	position: absolute;
+	bottom: 28px;
+	left: calc(50% - 156px);;
+}
+
+
+footer {
+	background-color: #353c44;
+	height: 70px;
+	color: #6a9d34;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer span {
+	line-height: 43px;
+}
+
+footer .container > img {
+	float: right;
+	margin-left: 20px;
+}
+
+
+section.rate-table .container {
+	position: relative;
+}
+
+section.rate-table .middle-shape {
+	position: absolute;
+	top: -55px;
+	left: calc(50% - 151px);;
+}
+
+
+
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+	header {
+		height: auto;
+	}
+
+	header .container {
+		height: auto;
+	}
+
+	header .banner-top img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	header .banner-top .banner-benefits {
+		display: block;
+		line-height: 1.5em;
+		text-align: center;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	header .banner-bottom .banner-text {
+		padding-left: 6%;
+		display: block;
+		font-size: 2em;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		height: 100%;
+	}
+
+	header .banner-bottom .banner-person {
+		/*position: static;*/
+		display: none;
+	}
+
+	header .banner-bottom .banner-person img {
+		height: 50%;
+		width: 50%;
+		float: right;
+	}
+
+	section form {
+		position: static;
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		margin-top: 20px;
+    	margin-left: 55px;
+	}
+
+	section form .submit-form-button:after {
+		margin-left: 5px;
+	}
+
+	section.rate-table .currency-details {
+		display: none;
+	}
+
+	footer {
+		display: block;
+		height: auto;
+		text-align: center;
+		padding-top: 40px;
+	}
+
+	footer .container > img {
+		float: none;
+		margin-left: 0;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	footer span {
+		display: none;
+	}
+
+	footer .bottom-shape {
+		bottom: 162px;
+	}
+
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 974px) {
+	section form {
+		max-width: 300px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	section form {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+
+	section.steps .step-1, section.steps .step-2 {
+		margin-bottom: 0px;
+	}
+
+	section.steps .step-1 img, section.steps .step-3 img {
+		margin-left: 10px;
+	}
+
+	section.steps .step-2 img {
+		margin-right: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	section.steps .dots-1, section.steps .dots-2 {
+		display: none;
+	}
+
+	section.steps img {
+		width: 100%;
+	}
+
+	section.steps .step-1, section.steps .step-2 {
+		margin-bottom: 10px;
+	}
+}
+
